@@ -1,0 +1,36 @@
+ETHEREUM SMART CONTRACT SECURITY BEST PRACTICES
+
+* Prepare for failure
+
+- Pause the contract when things go wrong('circuit breaker')
+- Manage the amount of money at risk (rate-limiting, maximum usage)
+- Effective path for bug fixes
+
+* Rollout Carefully: Test properly
+
+- Test carefully before deploying, add more tests when new attack points are discovered.
+- Bug bounties
+- Rollout in phases, with increasing usage and testing in each phase.
+
+
+* Keep Contracts Simple
+
+- Ensure the contract is simple and small
+- Modularize code to keep contracts and function (target pattern)
+- Use already existing tools or code 
+- prefer clarity to performance
+- Only use blockchain when necessary.
+
+* Stay up to date
+
+- Fix bugs as soon as vulnurabilities are discovered
+- Update to the latest version of any tool as soon as discovered
+- Adopt new security techniques when possible
+
+* Beware of the EVM's Idiosyncrasies
+
+- External contracts that contain malicious code
+- public functions can be called by anyone, private data is viewable by everyone.
+- Keep costs and gas limit in mind
+- timestamps in blockchain can be manipulated
+
